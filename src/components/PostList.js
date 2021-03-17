@@ -5,6 +5,10 @@ import { fetchPosts } from '../actions';
 
 
 class PostList extends Component {
+  componentDidMount() {
+    this.props.fetchPosts();
+  };
+
   render() {
     return (
       <div>Post List</div>
